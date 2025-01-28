@@ -1,12 +1,10 @@
-
 import React from 'react';
-import "./global.css"
+import './global.css';
 
-import Login from './src/screens/login/Login';
+import Home from './src/screens/home/Home';
 
-const App = ()=> {
-  return (<Login />
-  );
+const App = () => {
+  return <Home />;
 };
 
 export default App;
