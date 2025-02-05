@@ -1,10 +1,15 @@
-import React from 'react';
+import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import './global.css';
-
-import Home from './src/screens/home/Home';
+import Navigation from './src/stacks/Navigation';
 
 const App = () => {
-  return <Home />;
+  return (
+    <SafeAreaProvider>
+      <SafeAreaView style={{flex: 1}}>
+        <Navigation />
+      </SafeAreaView>
+    </SafeAreaProvider>
+  );
 };
 
 export default App;

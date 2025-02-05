@@ -9,7 +9,6 @@ const Input = ({setFormData, name}) => {
     <TextInput
       className="w-full border"
       placeholder={`Enter ${name}`}
-      secureTextEntry={name === 'email' ? false : true}
       onChangeText={text => {
         handleInputChange(text);
       }}
